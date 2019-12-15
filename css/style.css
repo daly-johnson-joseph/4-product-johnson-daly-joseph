@@ -24,7 +24,7 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(0,0,0,0.8);
+    background-color: skyblue(0,0,0.8);
 }
 /* Position the "next button" to the right */
 .next {
@@ -99,10 +99,6 @@
     to {opacity: 1}
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Solway', serif;
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -160,4 +156,9 @@ h1, h2, h3, h4, h5 {
     font-family: 'Be Vietnam', sans-serif;
     padding: 10px 20px;
     margin: -30px -30px -5px -30px;
+}
+
+h1,h3,h5 {
+    font-family: 'Zilla Slab', serif;
+    letter-spacing: 1px;
 }
