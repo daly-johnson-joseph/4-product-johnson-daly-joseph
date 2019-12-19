@@ -31,6 +31,10 @@
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -161,4 +165,92 @@
 h1,h3,h5 {
     font-family: 'Zilla Slab', serif;
     letter-spacing: 1px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #cce9f6;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #cce9f6;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #cbefe3;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid ;
+  background-color: #cce9f6;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #cce9f6;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
